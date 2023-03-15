@@ -1,0 +1,8 @@
+pandas
+scipy
+streamlit
+openai
+sounddevice 
+audiofile
+gtts
+
