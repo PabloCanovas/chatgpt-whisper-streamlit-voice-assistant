@@ -1,4 +1,4 @@
-# chatgpt + whisper + streamlit = voice-assistant
+# ChatGPT + Whisper + Streamlit = Voice assistant!
 
 This is an small app based on ChatGPT and deployed with Streamlit.
 
