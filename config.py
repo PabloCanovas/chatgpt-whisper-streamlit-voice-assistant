@@ -1,1 +1,0 @@
-OPENAI_KEY = "YOUR_KEY"

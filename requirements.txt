@@ -2,7 +2,10 @@ pandas
 scipy
 streamlit
 openai
+gtts
 sounddevice 
 audiofile
-gtts
+multiprocessing
+pyttsx3
+keyboard
 

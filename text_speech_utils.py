@@ -4,6 +4,20 @@ import audiofile as af
 from scipy.io.wavfile import write
 from gtts import gTTS
 
+import multiprocessing
+import pyttsx3
+import keyboard
+
+def say(text):
+		p = multiprocessing.Process(target=pyttsx3.speak, args=(text,))
+		p.start()
+		while p.is_alive():
+			if keyboard.is_pressed('enter'):
+				p.terminate()
+			else:
+				continue
+		p.join()
+
 
 def record_audio(filename, sec, sr = 44100):
     audio = sd.rec(int(sec * sr), samplerate=sr, channels=2, blocking=False)
@@ -11,9 +25,9 @@ def record_audio(filename, sec, sr = 44100):
     write(filename, sr, audio)
 
 def record_audio_manual(filename, sr = 44100):
-    input("Press any key to start recording")
+    input("  ** Press enter to start recording **")
     audio = sd.rec(int(10 * sr), samplerate=sr, channels=2)
-    input("Press any key to stop recording")
+    input("  ** Press enter to stop recording **")
     sd.stop()
     write(filename, sr, audio)
 
@@ -36,4 +50,6 @@ def translate_audio(filename):
 def save_text_as_audio(text, audio_filename):
     myobj = gTTS(text=text, lang='en', slow=False)  
     myobj.save(audio_filename)
+
+
 
