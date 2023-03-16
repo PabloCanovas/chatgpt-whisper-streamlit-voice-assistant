@@ -1,6 +1,6 @@
 # ChatGPT + Whisper + Streamlit = Voice assistant!
 
-This is an small app based on ChatGPT and deployed with Streamlit.
+This is an small app based on ChatGPT and deployed with Streamlit. The repo also include a version to run directly from console.
 
 * Receives input audio through the microphone
 * Transcribe (or translate if necessary) with Wishper API
