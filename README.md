@@ -21,7 +21,9 @@ and by running: `pipenv install` which will install dependencies based on my Pip
 * With all libraries installed, we need to manually introduce our own OpenAI api key. You need to create a new file called `myapikeys.py` with this line inside:
 `OPENAI_KEY = "my-apikey-goes-here"`
 
-* With all the set up ready, simply run the bot typing ```python chatbot.py```
+* With all the set up ready, simply run the bot typing `python chatbot.py`
+
+* You also can run it on the browser making use of the `streamlit` library. Run `streamlit run chatbot_streamlit.py` 
 
 ## Use instructions: 
 * Press Enter to start and stop recording.
