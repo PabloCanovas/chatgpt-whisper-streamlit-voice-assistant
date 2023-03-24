@@ -29,3 +29,7 @@ and by running: `pipenv install` which will install dependencies based on my Pip
 * Press Enter to start and stop recording.
 * Don't forget to reflect on the times we are living on. What a time to be alive!
 
+## Streamlit webapp snapshot
+
+![](https://github.com/PabloCanovas/chatgpt-whisper-streamlit-voice-assistant/blob/master/img/streamlit_app.png)
+
