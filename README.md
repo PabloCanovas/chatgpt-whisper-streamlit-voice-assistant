@@ -1,4 +1,4 @@
-# ChatGPT + Whisper + Streamlit = Voice assistant!
+# ChatGPT + Whisper = Voice assistant!
 
 ## Project description
 This is an small app based on ChatGPT and deployed with Streamlit. The repo also include a version to run directly from console.
